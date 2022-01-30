@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:messenger/components/primary_button.dart';
 import 'package:messenger/constants.dart';
+import 'package:messenger/screens/chats/chats_screen.dart';
 
 class SigninOrSignupScreen extends StatelessWidget {
   @override
@@ -23,7 +24,8 @@ class SigninOrSignupScreen extends StatelessWidget {
               Spacer(),
               PrimaryButton(
                 text: 'Sign In',
-                press: () {},
+                press: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ChatsScreen())),
               ),
               SizedBox(
                 height: kDefaultPadding * 1.5,
