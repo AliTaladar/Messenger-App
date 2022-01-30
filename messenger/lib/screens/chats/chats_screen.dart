@@ -53,10 +53,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
       automaticallyImplyLeading: false,
       title: Text('Chats'),
       actions: [
-        IconButton(
-          icon: Icon(Icons.search),
-          onPressed: () {},
-        ),
+        IconButton(icon: Icon(Icons.search), onPressed: () {}),
       ],
     );
   }
